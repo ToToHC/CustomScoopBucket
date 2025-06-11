@@ -7,6 +7,7 @@ This is a custom [Scoop](https://scoop.sh) bucket containing installers for the 
 - Surge XT Synthesizer
 - X2Go Client
 
+
 ---
 
 ## Usage
