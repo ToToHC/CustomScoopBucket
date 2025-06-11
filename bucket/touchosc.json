@@ -1,17 +1,19 @@
-{
-  "version": "latest",
-  "description": "TouchOSC Editor",
-  "homepage": "https://hexler.net/touchosc",
-  "license": "Commercial",
-  "url": "https://hexler.net/pub/touchosc/TouchOSC-Setup.exe",
-  "hash": "skip",
-  "installer": {
-    "script": [
-      "Start-Process \"$dir\\TouchOSC-Setup.exe\" -ArgumentList '/S' -Wait"
-    ]
-  },
-  "bin": [],
-  "autoupdate": {
-    "url": "https://hexler.net/pub/touchosc/TouchOSC-Setup.exe"
-  }
+﻿{
+    "version":  "latest",
+    "description":  "TouchOSC Editor",
+    "homepage":  "https://hexler.net/touchosc",
+    "license":  "Commercial",
+    "url":  "https://hexler.net/pub/touchosc/TouchOSC-Setup.exe",
+    "hash":  null,
+    "installer":  {
+                      "script":  [
+                                     "Start-Process \"$dir\\TouchOSC-Setup.exe\" -ArgumentList \u0027/S\u0027 -Wait"
+                                 ]
+                  },
+    "bin":  [
+
+            ],
+    "autoupdate":  {
+                       "url":  "https://hexler.net/pub/touchosc/TouchOSC-Setup.exe"
+                   }
 }
