@@ -1,11 +1,7 @@
 # CustomScoopBucket
 
 This is a custom [Scoop](https://scoop.sh) bucket containing installers for the following software:
-- Native Instruments Native Access
-- iZotope Product Portal
-- Arturia Software Center
-- Surge XT Synthesizer
-- X2Go Client
+
 
 
 ---
