@@ -10,6 +10,9 @@ This is a custom [Scoop](https://scoop.sh) bucket containing installers for the 
 - Novation Components
 - TouchOSC Editor
 - TouchOSC Bridge
+- Renoise
+- Mozilla Thunderbird
+
 
 ---
 
