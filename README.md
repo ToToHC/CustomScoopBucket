@@ -13,6 +13,7 @@ This is a custom [Scoop](https://scoop.sh) bucket containing installers for the 
 - Renoise
 - Mozilla Thunderbird
 
+
 ---
 
 ## Usage
