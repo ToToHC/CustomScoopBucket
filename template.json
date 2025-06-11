@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "description": "<BESCHREIBUNG>",
+  "homepage": "<HOMEPAGE>",
+  "license": "<LIZENZ>",
+  "url": "<DOWNLOAD-URL>",
+  "hash": "skip",
+  "installer": {
+    "script": [
+      "Start-Process \"$dir\\<DATEINAME>.exe\" -ArgumentList '/S' -Wait"
+    ]
+  },
+  "bin": [],
+  "autoupdate": {
+    "url": "<DOWNLOAD-URL>"
+  }
+}
