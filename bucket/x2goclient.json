@@ -1,17 +1,19 @@
-{
-  "version": "latest",
-  "description": "X2Go Client for Windows",
-  "homepage": "https://wiki.x2go.org/doku.php/doc:installation:x2goclient",
-  "license": "GPL-2.0",
-  "url": "http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe",
-  "hash": "skip",
-  "installer": {
-    "script": [
-      "Start-Process \"$dir\\X2GoClient_latest_mswin32-setup.exe\" -ArgumentList '/S' -Wait"
-    ]
-  },
-  "bin": [],
-  "autoupdate": {
-    "url": "http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe"
-  }
+﻿{
+    "version":  "latest",
+    "description":  "X2Go Client for Windows",
+    "homepage":  "https://wiki.x2go.org/doku.php/doc:installation:x2goclient",
+    "license":  "GPL-2.0",
+    "url":  "http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe",
+    "hash":  "227857330e14cf88c88159c5439c914ce2e4170c7aa29149641d5df11d1745f0",
+    "installer":  {
+                      "script":  [
+                                     "Start-Process \"$dir\\X2GoClient_latest_mswin32-setup.exe\" -ArgumentList \u0027/S\u0027 -Wait"
+                                 ]
+                  },
+    "bin":  [
+
+            ],
+    "autoupdate":  {
+                       "url":  "http://code.x2go.org/releases/X2GoClient_latest_mswin32-setup.exe"
+                   }
 }
