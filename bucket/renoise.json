@@ -1,0 +1,17 @@
+{
+  "version": "3.4.4",
+  "description": "Renoise Demo Version",
+  "homepage": "https://www.renoise.com/download",
+  "license": "Trialware",
+  "url": "https://files.renoise.com/demo/Renoise_3_4_4_Demo_Windows.exe",
+  "hash": "skip",
+  "installer": {
+    "script": [
+      "Start-Process \"$dir\\Renoise_3_4_4_Demo_Windows.exe\" -ArgumentList '/S' -Wait"
+    ]
+  },
+  "bin": [],
+  "autoupdate": {
+    "url": "https://files.renoise.com/demo/Renoise_3_4_4_Demo_Windows.exe"
+  }
+}
