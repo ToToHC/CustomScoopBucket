@@ -2,7 +2,14 @@
 
 This is a custom [Scoop](https://scoop.sh) bucket containing installers for the following software:
 
-
+- Native Instruments - Native Access
+- iZotope Product Portal
+- Arturia Software Center
+- Surge XT
+- X2Go Client
+- Novation Components
+- TouchOSC Editor
+- TouchOSC Bridge
 
 ---
 
