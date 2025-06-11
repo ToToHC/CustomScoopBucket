@@ -2,21 +2,37 @@ param(
     [string]$manifest
 )
 
-# Lade das Manifest
-$json = Get-Content $manifest | ConvertFrom-Json
+if (!(Test-Path $manifest)) {
+    Write-Error "Manifest file not found: $manifest"
+    exit 1
+}
 
-# Download Datei
+# Lade das Manifest
+$json = Get-Content $manifest -Raw | ConvertFrom-Json
+
+# Prüfe ob URL existiert
+if (-not $json.url) {
+    Write-Error "No URL found in manifest."
+    exit 1
+}
+
+# Temporäre Download-Datei
 $tempFile = "$env:TEMP\scoop_temp_file"
+
+Write-Output "Downloading: $($json.url)"
 Invoke-WebRequest -Uri $json.url -OutFile $tempFile
 
 # Berechne SHA256
 $hash = (Get-FileHash $tempFile -Algorithm SHA256).Hash.ToLower()
 
-# Hash eintragen
+# Hash ersetzen
 $json.hash = $hash
 
-# Zurückschreiben
+# Manifest zurückschreiben (formatiert)
 $json | ConvertTo-Json -Depth 10 | Out-File $manifest -Encoding utf8
 
-Write-Output "✅ Hash für $manifest aktualisiert: $hash"
-Remove-Item $tempFile
+Write-Output "✅ Hash updated for: $manifest"
+Write-Output "SHA256: $hash"
+
+# Aufräumen
+Remove-Item $tempFile -Force
